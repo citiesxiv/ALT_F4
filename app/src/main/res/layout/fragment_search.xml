@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#00FFFFFF"
+    tools:context=".ui.search.SearchFragment">
+
+    <ImageView
+        android:id="@+id/alt_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="151dp"
+        android:src="@drawable/alt_f_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/username_boximg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="77dp"
+        android:src="@drawable/username_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alt_logo" />
+
+    <ImageView
+        android:id="@+id/tag_boximg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="77dp"
+        android:src="@drawable/tag_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_boximg" />
+
+    <ImageButton
+        android:id="@+id/SearchBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="121dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/search_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tag_boximg" />
+
+    <EditText
+        android:id="@+id/UserNameTxt"
+        android:layout_width="230dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/bebas"
+        android:hint="USERNAME"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="#BCB9B9"
+        app:layout_constraintBottom_toBottomOf="@+id/username_boximg"
+        app:layout_constraintEnd_toEndOf="@+id/username_boximg"
+        app:layout_constraintStart_toStartOf="@+id/username_boximg"
+        app:layout_constraintTop_toTopOf="@+id/username_boximg" />
+
+    <EditText
+        android:id="@+id/TagTxt"
+        android:layout_width="230dp"
+        android:layout_height="38dp"
+        android:backgroundTint="#00FFFFFF"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        android:ems="10"
+        android:fontFamily="@font/bebas"
+        android:hint="TAG"
+        android:inputType="textPersonName"
+        android:maxLength="8"
+        android:textColor="@color/white"
+        android:textColorHint="#BCB9B9"
+        app:layout_constraintBottom_toBottomOf="@+id/tag_boximg"
+        app:layout_constraintEnd_toEndOf="@+id/tag_boximg"
+        app:layout_constraintStart_toStartOf="@+id/tag_boximg"
+        app:layout_constraintTop_toTopOf="@+id/tag_boximg" />
+
+    <TextView
+        android:id="@+id/hashtag_prv"
+        android:layout_width="33dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/bebas"
+        android:text="#"
+        android:textAlignment="viewEnd"
+        android:textColor="#FE4755"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tag_boximg"
+        app:layout_constraintEnd_toStartOf="@+id/tag_boximg"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

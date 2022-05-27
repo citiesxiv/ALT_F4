@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_search">
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.ALTF4.ALTF4.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_navigation_search_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_maps"
+        android:name="com.ALTF4.ALTF4.ui.maps.MapsFragment"
+        android:label="@string/title_maps"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_navigation_maps_to_havenFragment"
+            app:destination="@id/havenFragment" />
+        <action
+            android:id="@+id/action_navigation_maps_to_ascentFragment"
+            app:destination="@id/ascentFragment" />
+        <action
+            android:id="@+id/action_navigation_maps_to_bindFragment"
+            app:destination="@id/bindFragment" />
+        <action
+            android:id="@+id/action_navigation_maps_to_fractureFragment"
+            app:destination="@id/fractureFragment" />
+        <action
+            android:id="@+id/action_navigation_maps_to_breezeFragment"
+            app:destination="@id/breezeFragment" />
+        <action
+            android:id="@+id/action_navigation_maps_to_splitFrgament"
+            app:destination="@id/splitFrgament" />
+        <action
+            android:id="@+id/action_navigation_maps_to_iceBoxFragment"
+            app:destination="@id/iceBoxFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/havenFragment"
+        android:name="com.ALTF4.ALTF4.ui.maps.HavenFragment"
+        android:label="fragment_haven"
+        tools:layout="@layout/fragment_haven" />
+    <fragment
+        android:id="@+id/bindFragment"
+        android:name="com.ALTF4.ALTF4.ui.maps.BindFragment"
+        android:label="fragment_bind"
+        tools:layout="@layout/fragment_bind" />
+    <fragment
+        android:id="@+id/ascentFragment"
+        android:name="com.ALTF4.ALTF4.ui.maps.AscentFragment"
+        android:label="fragment_ascent"
+        tools:layout="@layout/fragment_ascent" />
+    <fragment
+        android:id="@+id/breezeFragment"
+        android:name="com.ALTF4.ALTF4.ui.maps.BreezeFragment"
+        android:label="fragment_breeze"
+        tools:layout="@layout/fragment_breeze" />
+    <fragment
+        android:id="@+id/fractureFragment"
+        android:name="com.ALTF4.ALTF4.ui.maps.FractureFragment"
+        android:label="fragment_fracture"
+        tools:layout="@layout/fragment_fracture" />
+    <fragment
+        android:id="@+id/iceBoxFragment"
+        android:name="com.ALTF4.ALTF4.ui.maps.IceBoxFragment"
+        android:label="fragment_ice_box"
+        tools:layout="@layout/fragment_ice_box" />
+    <fragment
+        android:id="@+id/splitFrgament"
+        android:name="com.ALTF4.ALTF4.ui.maps.SplitFrgament"
+        android:label="fragment_split"
+        tools:layout="@layout/fragment_split" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.ALTF4.ALTF4.ui.search.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_matchHistoryFragment"
+            app:destination="@id/matchHistoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/matchHistoryFragment"
+        android:name="com.ALTF4.ALTF4.ui.search.MatchHistoryFragment"
+        android:label="match_history_fragment"
+        tools:layout="@layout/match_history_fragment" />
+</navigation>
